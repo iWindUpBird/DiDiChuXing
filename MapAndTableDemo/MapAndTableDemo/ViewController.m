@@ -44,8 +44,10 @@
     
     // 表格部分
 
-    XDSTableView *tableView = [[XDSTableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+    //20为状态栏高度；tableview设置的大小要和view的大小一致
+    XDSTableView *tableView = [[XDSTableView alloc] initWithFrame:CGRectMake(0, 20, ScreenW, ScreenH) style:UITableViewStyleGrouped];
     
+    //tableview不延时
     self.tableView.delaysContentTouches = NO;
     for (UIView *subView in self.tableView.subviews) {
         if ([subView isKindOfClass:[UIScrollView class]]) {
@@ -53,17 +55,18 @@
         }
     }
     
+    //tableview下移
+    tableView.contentInset = UIEdgeInsetsMake(500, 0, 0, 0);
+    
+    tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenW, 0.001)];//去掉头部空白
     tableView.backgroundColor = [UIColor clearColor];
     tableView.delegate = self;
     tableView.dataSource = self;
-    tableView.estimatedSectionFooterHeight = 0;
-    tableView.estimatedSectionHeaderHeight = 0;
     tableView.showsVerticalScrollIndicator = NO;
-    
+    tableView.sectionHeaderHeight = 0.0;//消除底部空白
+    tableView.sectionFooterHeight = 0.0;//消除底部空白
     self.tableView = tableView;
     [self.view addSubview:tableView];
-;
-
     
 }
 

@@ -11,15 +11,7 @@
 #define ScreenH [UIScreen mainScreen].bounds.size.height
 @implementation XDSTableView
 
--(instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style{
-    
-    self = [super initWithFrame:CGRectMake(0, 0, ScreenW, 900) style:UITableViewStyleGrouped];
-    
-    self.contentInset = UIEdgeInsetsMake(500, 0, 0, 0);
-    self.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0,0,ScreenW,0.001)];
-    
-    return self;
-}
+
 
 -(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
     
