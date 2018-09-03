@@ -7,11 +7,20 @@
 //
 
 #import "XDSTableView.h"
+
 #define ScreenW [UIScreen mainScreen].bounds.size.width
 #define ScreenH [UIScreen mainScreen].bounds.size.height
+
 @implementation XDSTableView
 
+- (void)setFrame:(CGRect)frame{
 
+    frame.origin.x = 10;
+    frame.size.width = ScreenW - 20;
+    
+    [super setFrame:frame];
+    
+}
 
 -(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
     

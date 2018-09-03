@@ -14,6 +14,14 @@
 		461EBB99207E363A00EB5947 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 461EBB98207E363A00EB5947 /* main.m */; };
 		461EBBA3207E36AC00EB5947 /* XDSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 461EBB9F207E36AC00EB5947 /* XDSTableView.m */; };
 		461EBBA4207E36AC00EB5947 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 461EBBA0207E36AC00EB5947 /* ViewController.m */; };
+		464B2C08213BA295000D17F0 /* XDSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 464B2C06213BA295000D17F0 /* XDSTableViewCell.m */; };
+		464B2C09213BA295000D17F0 /* XDSTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 464B2C07213BA295000D17F0 /* XDSTableViewCell.xib */; };
+		464B2C0C213BA84C000D17F0 /* XDSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 464B2C0B213BA84C000D17F0 /* XDSScrollView.m */; };
+		464B2C10213BAC08000D17F0 /* XDSHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 464B2C0E213BAC08000D17F0 /* XDSHeaderView.m */; };
+		464B2C11213BAC08000D17F0 /* XDSHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 464B2C0F213BAC08000D17F0 /* XDSHeaderView.xib */; };
+		464B2C14213BB19A000D17F0 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 464B2C13213BB19A000D17F0 /* UIView+Frame.m */; };
+		464B2C18213BB640000D17F0 /* XDSTaxiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 464B2C15213BB63F000D17F0 /* XDSTaxiView.m */; };
+		464B2C19213BB640000D17F0 /* XDSTaxiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 464B2C16213BB63F000D17F0 /* XDSTaxiView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +37,19 @@
 		461EBBA0207E36AC00EB5947 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		461EBBA1207E36AC00EB5947 /* XDSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSTableView.h; sourceTree = "<group>"; };
 		461EBBA2207E36AC00EB5947 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		464B2C05213BA295000D17F0 /* XDSTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDSTableViewCell.h; sourceTree = "<group>"; };
+		464B2C06213BA295000D17F0 /* XDSTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDSTableViewCell.m; sourceTree = "<group>"; };
+		464B2C07213BA295000D17F0 /* XDSTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XDSTableViewCell.xib; sourceTree = "<group>"; };
+		464B2C0A213BA84C000D17F0 /* XDSScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSScrollView.h; sourceTree = "<group>"; };
+		464B2C0B213BA84C000D17F0 /* XDSScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSScrollView.m; sourceTree = "<group>"; };
+		464B2C0D213BAC08000D17F0 /* XDSHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSHeaderView.h; sourceTree = "<group>"; };
+		464B2C0E213BAC08000D17F0 /* XDSHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSHeaderView.m; sourceTree = "<group>"; };
+		464B2C0F213BAC08000D17F0 /* XDSHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XDSHeaderView.xib; sourceTree = "<group>"; };
+		464B2C12213BB199000D17F0 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		464B2C13213BB19A000D17F0 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		464B2C15213BB63F000D17F0 /* XDSTaxiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSTaxiView.m; sourceTree = "<group>"; };
+		464B2C16213BB63F000D17F0 /* XDSTaxiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XDSTaxiView.xib; sourceTree = "<group>"; };
+		464B2C17213BB63F000D17F0 /* XDSTaxiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSTaxiView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +82,7 @@
 		461EBB88207E363A00EB5947 /* MapAndTableDemo */ = {
 			isa = PBXGroup;
 			children = (
+				464B2C1A213BBEC8000D17F0 /* Classes */,
 				461EBB89207E363A00EB5947 /* AppDelegate.h */,
 				461EBB8A207E363A00EB5947 /* AppDelegate.m */,
 				461EBB8F207E363A00EB5947 /* Main.storyboard */,
@@ -68,12 +90,64 @@
 				461EBB94207E363A00EB5947 /* LaunchScreen.storyboard */,
 				461EBB97207E363A00EB5947 /* Info.plist */,
 				461EBB98207E363A00EB5947 /* main.m */,
-				461EBBA2207E36AC00EB5947 /* ViewController.h */,
-				461EBBA0207E36AC00EB5947 /* ViewController.m */,
-				461EBBA1207E36AC00EB5947 /* XDSTableView.h */,
-				461EBB9F207E36AC00EB5947 /* XDSTableView.m */,
 			);
 			path = MapAndTableDemo;
+			sourceTree = "<group>";
+		};
+		464B2C1A213BBEC8000D17F0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				464B2C1B213BBEFC000D17F0 /* Main */,
+				464B2C12213BB199000D17F0 /* UIView+Frame.h */,
+				464B2C13213BB19A000D17F0 /* UIView+Frame.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		464B2C1B213BBEFC000D17F0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				464B2C1C213BBF12000D17F0 /* Controller */,
+				464B2C1D213BBF25000D17F0 /* Model */,
+				464B2C1E213BBF2F000D17F0 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		464B2C1C213BBF12000D17F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				461EBBA2207E36AC00EB5947 /* ViewController.h */,
+				461EBBA0207E36AC00EB5947 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		464B2C1D213BBF25000D17F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		464B2C1E213BBF2F000D17F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				464B2C0A213BA84C000D17F0 /* XDSScrollView.h */,
+				464B2C0B213BA84C000D17F0 /* XDSScrollView.m */,
+				461EBBA1207E36AC00EB5947 /* XDSTableView.h */,
+				461EBB9F207E36AC00EB5947 /* XDSTableView.m */,
+				464B2C05213BA295000D17F0 /* XDSTableViewCell.h */,
+				464B2C06213BA295000D17F0 /* XDSTableViewCell.m */,
+				464B2C07213BA295000D17F0 /* XDSTableViewCell.xib */,
+				464B2C0D213BAC08000D17F0 /* XDSHeaderView.h */,
+				464B2C0E213BAC08000D17F0 /* XDSHeaderView.m */,
+				464B2C0F213BAC08000D17F0 /* XDSHeaderView.xib */,
+				464B2C17213BB63F000D17F0 /* XDSTaxiView.h */,
+				464B2C15213BB63F000D17F0 /* XDSTaxiView.m */,
+				464B2C16213BB63F000D17F0 /* XDSTaxiView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +211,9 @@
 				461EBB96207E363A00EB5947 /* LaunchScreen.storyboard in Resources */,
 				461EBB93207E363A00EB5947 /* Assets.xcassets in Resources */,
 				461EBB91207E363A00EB5947 /* Main.storyboard in Resources */,
+				464B2C09213BA295000D17F0 /* XDSTableViewCell.xib in Resources */,
+				464B2C19213BB640000D17F0 /* XDSTaxiView.xib in Resources */,
+				464B2C11213BAC08000D17F0 /* XDSHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,8 +225,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				461EBB99207E363A00EB5947 /* main.m in Sources */,
+				464B2C0C213BA84C000D17F0 /* XDSScrollView.m in Sources */,
+				464B2C14213BB19A000D17F0 /* UIView+Frame.m in Sources */,
+				464B2C08213BA295000D17F0 /* XDSTableViewCell.m in Sources */,
 				461EBBA4207E36AC00EB5947 /* ViewController.m in Sources */,
 				461EBB8B207E363A00EB5947 /* AppDelegate.m in Sources */,
+				464B2C10213BAC08000D17F0 /* XDSHeaderView.m in Sources */,
+				464B2C18213BB640000D17F0 /* XDSTaxiView.m in Sources */,
 				461EBBA3207E36AC00EB5947 /* XDSTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 695STD6YP8;
 				INFOPLIST_FILE = MapAndTableDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.itiis.MapAndTableDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,6 +384,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 695STD6YP8;
 				INFOPLIST_FILE = MapAndTableDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.itiis.MapAndTableDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

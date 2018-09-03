@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XDSTaxiView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="圆形绿" translatesAutoresizingMaskIntoConstraints="NO" id="E9f-El-tFm">
+                    <rect key="frame" x="32" y="25" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="jHG-33-LN1"/>
+                        <constraint firstAttribute="height" constant="12" id="r6W-wx-2gc"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ks-Og-5oy">
+                    <rect key="frame" x="47" y="55" width="328" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="zD3-o0-cow"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="圆形红" translatesAutoresizingMaskIntoConstraints="NO" id="lD3-ca-ECd">
+                    <rect key="frame" x="32" y="73" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="7x1-HQ-p2h"/>
+                        <constraint firstAttribute="width" constant="12" id="VQf-cc-PZU"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="武汉理工大学鉴湖校区东2门" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7z-iq-58o">
+                    <rect key="frame" x="58" y="23" width="192.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0039215686274509803" alpha="0.80185612416107388" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="黄鹤楼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8c-EY-RdQ">
+                    <rect key="frame" x="58" y="69" width="52" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.80185612416107388" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meT-lR-eWR">
+                    <rect key="frame" x="128" y="100" width="31" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="预约"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHc-zF-bU7">
+                    <rect key="frame" x="203" y="100" width="31" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="现在"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="E9f-El-tFm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="25" id="AYi-si-TdU"/>
+                <constraint firstItem="9Ks-Og-5oy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="55" id="BOR-IU-BtB"/>
+                <constraint firstAttribute="trailing" secondItem="9Ks-Og-5oy" secondAttribute="trailing" id="HhU-xG-3Us"/>
+                <constraint firstItem="9Ks-Og-5oy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="47" id="IRq-Dz-cQq"/>
+                <constraint firstItem="lD3-ca-ECd" firstAttribute="top" secondItem="E9f-El-tFm" secondAttribute="bottom" constant="36" id="MtQ-rB-nJV"/>
+                <constraint firstItem="9Ks-Og-5oy" firstAttribute="top" secondItem="A7z-iq-58o" secondAttribute="bottom" constant="14" id="Snz-gQ-5zs"/>
+                <constraint firstItem="lD3-ca-ECd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="buO-q9-lP2"/>
+                <constraint firstItem="E9f-El-tFm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="k1f-Ux-qq0"/>
+                <constraint firstItem="A7z-iq-58o" firstAttribute="leading" secondItem="E9f-El-tFm" secondAttribute="trailing" constant="14" id="uWv-z5-kHj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="24.5" y="-250"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="圆形红" width="16" height="16"/>
+        <image name="圆形绿" width="16" height="16"/>
+    </resources>
+</document>
