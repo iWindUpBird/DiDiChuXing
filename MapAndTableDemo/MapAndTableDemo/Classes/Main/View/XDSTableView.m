@@ -22,17 +22,5 @@
     
 }
 
--(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
-    
-    NSLog(@"point=%@",NSStringFromCGPoint(point));
-    
-    NSLog(@"y=%f",self.contentOffset.y);
-    
-    if (point.y<0) {
-        return nil;
-    }
-
-    return  [super hitTest:point withEvent:event];
-}
 
 @end

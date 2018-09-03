@@ -48,7 +48,7 @@ static NSString *cellID = @"cell";
     
     [self setupScrollView];
     [self setupTableView];
-    [self setupTaixView];
+    [self setupTaxiView];
     
 }
 
@@ -164,7 +164,7 @@ static NSString *cellID = @"cell";
 }
 
 #pragma mark - 出租车视图
-- (void)setupTaixView{
+- (void)setupTaxiView{
     
     XDSTaxiView *taxiView = [XDSTaxiView getTaxiView];
     taxiView.xds_width = ScreenW - 20;
@@ -194,11 +194,13 @@ static NSString *cellID = @"cell";
     [self.scrollView setContentOffset:CGPointMake(sender.tag*ScreenW, 0) animated:YES];
 }
 
+#pragma mark - message消息按钮
 - (void)messageBtn:(UIButton *)sender{
     
     NSLog(@"message按钮");
     
 }
+#pragma mark - mine我的按钮
 - (void)mineBtn:(UIButton *)sender{
     
     NSLog(@"mine按钮");
@@ -206,7 +208,7 @@ static NSString *cellID = @"cell";
 }
 
 
-#pragma mark - KVO 监听headerView（收缩头部视图）
+#pragma mark - KVO 监听tableView的contentOffset属性（收缩头部视图）
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
     
     if ([keyPath isEqualToString:@"contentOffset"]) {
