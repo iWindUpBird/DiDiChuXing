@@ -97,14 +97,9 @@ static NSString *cellID = @"cell";
     //20为状态栏高度；tableview设置的大小要和view的大小一致
     XDSTableView *tableView = [[XDSTableView alloc] initWithFrame:CGRectMake(0, 20, ScreenW, ScreenH) style:UITableViewStyleGrouped];
     
-    //tableview不延时
-    self.tableView.delaysContentTouches = NO;
-    for (UIView *subView in self.tableView.subviews) {
-        if ([subView isKindOfClass:[UIScrollView class]]) {
-            ((UIScrollView *)subView).delaysContentTouches = NO;
-        }
-    }
-    
+    self.tableView = tableView;
+
+    tableView.rowHeight = cellH;
     //tableview下移
     tableView.contentInset = UIEdgeInsetsMake(ScreenH-cellH-20, 0, 0, 0);
     
@@ -116,7 +111,7 @@ static NSString *cellID = @"cell";
     tableView.showsVerticalScrollIndicator = NO;
     tableView.sectionHeaderHeight = 0.0;//消除底部空白
     tableView.sectionFooterHeight = 0.0;//消除底部空白
-    self.tableView = tableView;
+    
     [self.scrollView addSubview:tableView];
     
     //注册cell
@@ -248,10 +243,10 @@ static NSString *cellID = @"cell";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-#pragma mark - cell高度
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return cellH;
-}
+//#pragma mark - cell高度
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    return cellH;
+//}
 
 #pragma mark - cell数量
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
